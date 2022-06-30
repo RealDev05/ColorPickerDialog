@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         colorPickerDialog.show(new ColorPickerDialogBuilder.ColorPickedListener() {
             @Override
             public void OnColorPicked(int color, String hex) {
-                Toast.makeText(MainActivity.this, "int : "+color+"\n hex : "+hex, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "int : "+color+"\nhex : "+hex, Toast.LENGTH_SHORT).show();
             }
         });
     }
