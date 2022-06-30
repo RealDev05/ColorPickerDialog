@@ -91,8 +91,8 @@ public class ColorPickerDialogBuilder extends AlertDialog.Builder  {
         LinearLayout.LayoutParams params=new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT,1);
         rgbBtn.setLayoutParams(params);
         hsvBtn.setLayoutParams(params);
-        rgbBtn.setText("RGB");
-        hsvBtn.setText("HSV");
+        rgbBtn.setText(R.string.rgb_upper); // R.string.rgb_upper = "RGB"
+        hsvBtn.setText(R.string.hsv_upper);// R.string.hsv_upper = "HSV"
         tabs.addView(rgbBtn);
         tabs.addView(hsvBtn);
 
@@ -121,7 +121,7 @@ public class ColorPickerDialogBuilder extends AlertDialog.Builder  {
 
         hexHSV=new EditText(contxt);
         hexHSV.setEms(10);
-        hexHSV.setText("#FFFF0000");
+        hexHSV.setText(R.string.color_red_hex); //R.string.color_red_hex  = "#FFFF0000"
         hexHSV.setImeOptions(EditorInfo.IME_ACTION_DONE);
         hexHSV.setInputType(InputType.TYPE_TEXT_VARIATION_PERSON_NAME);
         hexHSV.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -272,7 +272,7 @@ public class ColorPickerDialogBuilder extends AlertDialog.Builder  {
         rgbLayout.addView(new CustomRGBContainer(contxt,"Alpha : ",alphaRGB,alphaBox,dp10*5));
 
         hexRGB=new EditText(contxt);
-        hexRGB.setText("#FFFFFFFF");
+        hexRGB.setText(R.string.color_white_hex); //R.string.color_white_hex = "#FFFFFFFF"
         hexRGB.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         hexRGB.setEms(10);
         hexRGB.setHint("Hex value of color");
