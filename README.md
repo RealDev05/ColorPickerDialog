@@ -1,7 +1,7 @@
 # ColorPickerDialog
 #### This Color Picker is also available as a StandAlone class, for that refer [ColorPickerDialog](https://github.com/RealDev05/ColorPickerDialogStandAlone.git)
 - This library/module is written in java
-- The is an extension of Alert Dialog Builder
+- The main class (ColorPickerDialogBuilder) is an extension of Alert Dialog Builder
 - Most components are declared public so that they can be accessed from anywhere, thereby increasing versatility.
 - Even though, messing with some variables and values can result in unecpected results
 - This class was made for android ***SDK 21*** and above
