@@ -25,7 +25,7 @@ dependencyResolutionManagement {
 ```
 dependencies { 
   ...
-  implementation 'com.github.RealDev05:ColorPickerDialog:Tag'
+  implementation 'com.github.RealDev05:ColorPickerDialog:0.1.3'
 }
 ``` 
 - - to your ***build.gradle*** of your app (not project or root)
