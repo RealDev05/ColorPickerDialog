@@ -8,13 +8,27 @@
 - Can provide the color in ***integer*** and ***hex string*** form (eg : 0,1 and #FFFFFFFF, #FF000000)
 - Hex string returned is in ***#AARRGGBB*** form 
 ## Setup
-- Copy the java file, that is, ***ColorPickerDialogBuilder.java*** to your project
-- The class is declared with package name **com.realdev.betrage.ColorPickerDialog** , so change it to match yours
-- - That is, if your package name ( can be found at top of your *mainactivity* ) **com.example.test** then change the top line of **ColorPickerDialogBuilder
-- - > ***package com.realdev.betrage.ColorPickerDialog;*** 
-- - to 
-- - > **package _com.example.test_.ColorPickerDialog;**
-- You are all set
+- If you are using old Android Studio (or any other IDE), refer to [![](https://jitpack.io/v/RealDev05/ColorPickerDialog.svg)](https://jitpack.io/#RealDev05/ColorPickerDialog)
+- If you are using new Android Studio (or any other IDE)
+- - Add 
+```
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+         ...
+         maven { url 'https://jitpack.io' }
+    }
+}
+``` 
+- - to your ***settings.gradle***
+- - Add 
+```
+dependencies { 
+  ...
+  implementation 'com.github.RealDev05:ColorPickerDialog:Tag'
+}
+``` 
+- - to your ***build.gradle*** of your app (not project or root)
 - Contact me if there is any doubts/problems
 ## Usage
 ```
